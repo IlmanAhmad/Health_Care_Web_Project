@@ -1,5 +1,6 @@
-\doc\migrations
-\doc\__pycache__
-\doc\migrations\__pycache__
-\doctorweb\__pycache__
-\doctorweb\settings
+# Specific files #
+##################
+doc/migrations
+doc/__pycache__
+doctorweb/__pycache__
+doctorweb/settings.py
