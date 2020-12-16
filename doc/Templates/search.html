@@ -1,0 +1,16 @@
+{% extends 'home.html' %}
+{% block body %}
+<div class="container mt-3">
+    <div class="card" style="width: 18rem;">
+  <div class="card-body">
+      {% for i in all_patients%}
+    <h5 class="card-title">{{i.full_name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{i.disease}}</h6>
+      <p class="card-text"><b>Prescription :- </b></p>
+    <p class="card-text" style="text-align: right;font-size: small;">{{i.prescription_date}}</p>
+      <p class="card-text">{{i.prescription}}</p>
+      {% endfor %}
+  </div>
+</div>
+</div>
+{% endblock %}
